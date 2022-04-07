@@ -1,0 +1,11 @@
+import "hash"
+
+rule simple_hash_rule1 {
+  condition:
+    hash.sha256(0, filesize) == "0b899508777d7ed5159e2a99a5eff60c54d0724493df3d630525b837fa43aa51"
+}
+
+rule simple_hash_rule2 {
+  condition:
+    hash.sha256(0, filesize) == "928c2808421dfd487ffa697379548cbe682c0e13aeb595eb89973ba9c515b8a1"
+}
